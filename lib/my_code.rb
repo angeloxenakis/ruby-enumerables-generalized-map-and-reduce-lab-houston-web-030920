@@ -1,1 +1,1 @@
-def 
+def map(array, block)
