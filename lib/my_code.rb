@@ -9,14 +9,13 @@ def map(array)
 end
 
 def reduce(array, starting_point = nil)
-  if starting_point != nil
+  if starting_point
     value = starting_point
     i = 0
   else
     value = array[0]
     i = 1
   end
-  i = 0 
   while i < array.length do
     value = yield(value, array[i])
     i += 1 
