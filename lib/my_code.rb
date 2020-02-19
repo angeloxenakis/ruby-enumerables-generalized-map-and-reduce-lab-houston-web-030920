@@ -9,10 +9,10 @@ def map(array)
 end
 
 def reduce(array, starting_point = nil)
-  if starting_point
+  if starting_point != nil
     value = starting_point
     i = 0
-  elsif starting_point == nil
+  else
     value = array[0]
     i = 1
   end
