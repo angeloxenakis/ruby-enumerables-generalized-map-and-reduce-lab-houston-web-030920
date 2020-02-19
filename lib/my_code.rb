@@ -9,10 +9,14 @@ def map(array)
 end
 
 def reduce(array, starting_point = nil)
-  total = 0 
+  value = nil
   if starting_point
     total = starting_point
   end
   i = 0 
   while i < array.length do
     array
+    i += 1 
+  end
+  value
+end
